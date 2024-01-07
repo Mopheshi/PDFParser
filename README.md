@@ -1,4 +1,4 @@
-# PDF Text Extractor
+# PDFParser
 
 This Python program allows you to extract text from a PDF file and save it to a text file using the pdfplumber library.
 
