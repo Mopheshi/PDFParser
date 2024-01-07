@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class HbabiblePipeline:
+class KilbabiblePipeline:
     def process_item(self, item, spider):
         return item

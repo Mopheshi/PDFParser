@@ -1,4 +1,4 @@
-# Scrapy settings for HəbaBible project
+# Scrapy settings for KilbaBible project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "HəbaBible"
+BOT_NAME = "KilbaBible"
 
-SPIDER_MODULES = ["HəbaBible.spiders"]
-NEWSPIDER_MODULE = "HəbaBible.spiders"
+SPIDER_MODULES = ["KilbaBible.spiders"]
+NEWSPIDER_MODULE = "KilbaBible.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "HəbaBible (+http://www.yourdomain.com)"
+#USER_AGENT = "KilbaBible (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "HəbaBible.middlewares.HbabibleSpiderMiddleware": 543,
+#    "KilbaBible.middlewares.KilbabibleSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "HəbaBible.middlewares.HbabibleDownloaderMiddleware": 543,
+#    "KilbaBible.middlewares.KilbabibleDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "HəbaBible.pipelines.HbabiblePipeline": 300,
+#    "KilbaBible.pipelines.KilbabiblePipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
