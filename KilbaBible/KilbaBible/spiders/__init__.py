@@ -8,7 +8,7 @@ class CustomSpider(scrapy.Spider):
     def parse(self, response):
         data = {
             "name": response.css('.sc-qYiqT.eFjzzg::text').get(),
-            "newText": " ".join(response.css('.sc-fzomME.glcNSq .verse-span::text').getall())
+            "newText": "\n".join(response.css('.sc-fzomME.glcNSq .verse-span::text').getall())
         }
         yield data
 
