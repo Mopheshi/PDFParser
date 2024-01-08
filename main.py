@@ -19,12 +19,9 @@ def extract_pdf(pdf_path):
         extracted_text = extract_pdf(pdf_path)
     """
     try:
-        # Open the PDF file
         with pdfplumber.open(pdf_path) as pdf:
-            # Initialize an empty string to store the text
             text = ""
 
-            # Iterate through each page and extract text
             for page in pdf.pages:
                 text += page.extract_text()
 
@@ -50,7 +47,6 @@ def save_txt(text, output_file):
         save_txt(extracted_text, output_file)
     """
     try:
-        # Open the output file in write mode
         with open(output_file, 'w', encoding='utf-8') as file:
             file.write(text)
         print(f"Text saved to {output_file}")
@@ -58,7 +54,6 @@ def save_txt(text, output_file):
         print(f"An error occurred while saving the file: {str(e)}")
 
 
-# Example usage
 pdf_path = 'files/file.pdf'
 output_file = 'extracts/text.txt'
 
